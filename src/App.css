@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  color: #ffffff;
+  font-size: large;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.history {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  justify-content: flex-start;
+  border-left: whitesmoke;
+  border-right: whitesmoke;
+  height: fit-content;
+  width: auto;
+}
+.App-module {
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+
+  grid-gap: 7rem;
+  padding: 0 2rem;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+.img img {
+  width: 500px;
+}
+.message-container {
+  display: flex;
 
-@keyframes App-logo-spin {
+  align-items: center;
+  text-align: center;
+}
+form {
+  width: 500px;
+}
+form h2 {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #f2f2f2;
+}
+.input-div {
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 100px 0;
+  padding: 20px 0;
+  border: none;
+  border-radius: %;
+}
+.input-div.one {
+  margin-top: 0;
+}
+.input-div.two {
+  margin-bottom: 4px;
+}
+/* .i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.i i {
+  color: #ffffff;
+} */
+.input-div > div {
+  position: relative;
+  height: 45px;
+}
+.textarea {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  border-radius: 10%;
+  border: none;
+  background: none;
+  color: #ffffff;
+}
+.input-div > div h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+.input {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  right: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */

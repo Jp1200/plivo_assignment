@@ -1,14 +1,14 @@
 import React from "react";
-
+import Message from "./MessageApi.js";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        Plivo Web Application, Testing SMS texts and cataloging messages from
-        across the world
-      </header>
+    <div className="App-module">
+      <div className="img">
+        <img src={require("./assestImgs/imgPhone.svg")} alt="undraw" />
+        <Message />
+      </div>
     </div>
   );
 }
