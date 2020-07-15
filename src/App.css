@@ -3,45 +3,82 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.btn {
+  position: absolute;
+  left: 0;
+}
 .header {
   color: #ffffff;
   font-size: large;
 }
 .history {
-  display: flex;
-  position: relative;
-  justify-content: flex-start;
-  border-left: whitesmoke;
-  border-right: whitesmoke;
-  height: fit-content;
-  width: auto;
+  height: 234px;
+  border: none;
+  overflow: auto;
+  background: none;
+  justify-content: end;
+  margin: 2%;
+}
+.tag {
+  background-color: #282c34;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.log-ove {
+  border-left: oldlace;
+  overflow: auto;
+}
+.message-text {
+  white-space: pre-line;
+  color: white;
+  font-size: 12pt;
+  align-self: center;
+}
+.input-container {
+  margin: 2%;
+}
+.list-group-numb {
+  width: 200px;
+  font-size: smaller;
+  color: black;
+  border: none;
 }
 .App-module {
+  background-image: url("./assestImgs/imgPhone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: #282c34;
-  width: 100vw;
   height: 100vh;
-  display: grid;
+  width: 100vw;
+  /* display: grid;
 
   grid-gap: 7rem;
   padding: 0 2rem;
 
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vmin); */
   color: white;
 }
+
 .img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  text-align: center;
+}
+.mutedText {
+  font-size: 10px;
+  opacity: 75%;
+  color: antiquewhite;
+  text-align: start;
 }
 .img img {
   width: 500px;
 }
 .message-container {
-  display: flex;
-
-  align-items: center;
-  text-align: center;
+  height: 300px;
+  overflow: auto;
 }
 form {
   width: 500px;
@@ -59,6 +96,7 @@ form h2 {
   padding: 20px 0;
   border: none;
   border-radius: %;
+  position: relative;
 }
 .input-div.one {
   margin-top: 0;
@@ -110,6 +148,7 @@ form h2 {
   font-size: 1.8rem;
   color: #ffffff;
 }
+
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
